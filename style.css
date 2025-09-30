@@ -1,0 +1,145 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: #1f1f1f;
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #2a2a2a;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #ff6f61;
+  letter-spacing: 1px;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: 2rem 1rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: #1e1e1e;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.stat-card h2 {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcc70;
+}
+
+/* Habits Section */
+.habits {
+  margin: 2rem 1rem;
+}
+
+.habits h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ff6f61;
+}
+
+#habit-list {
+  list-style: none;
+}
+
+.habit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  transition: background 0.3s ease;
+}
+
+.habit-item:hover {
+  background: #292929;
+}
+
+.habit-item label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.habit-item input[type="checkbox"] {
+  accent-color: #ff6f61;
+  width: 18px;
+  height: 18px;
+}
+
+.habit-name {
+  font-size: 1rem;
+}
+
+.habit-points {
+  font-size: 0.9rem;
+  color: #ffcc70;
+  font-weight: bold;
+}
+
+/* Add Habit Section */
+.add-habit {
+  margin: 2rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.add-habit input {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #1f1f1f;
+  color: #f5f5f5;
+}
+
+.add-habit button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #ff6f61;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-habit button:hover {
+  background: #ff3d2e;
+}
